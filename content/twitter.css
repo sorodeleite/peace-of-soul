@@ -1,0 +1,117 @@
+html[data-pos-twitter-timeline="true"].pos-is-home div[data-testid="primaryColumn"] [role="tablist"],
+html[data-pos-twitter-timeline="true"].pos-is-home div[data-testid="primaryColumn"] [data-testid="ScrollSnap-List"],
+html[data-pos-twitter-timeline="true"].pos-is-home div[data-testid="primaryColumn"] nav[role="navigation"] {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+html[data-pos-twitter-timeline="true"].pos-is-home div[data-testid="primaryColumn"] section div[data-testid="cellInnerDiv"]:not(:has([data-testid="tweetTextarea_0"])):not(:has([data-testid="tweetButtonInline"])):not(.pos-keep-visible),
+html[data-pos-twitter-timeline="true"].pos-is-home div[data-testid="primaryColumn"] div[data-testid="cellInnerDiv"]:not(:has([data-testid="tweetTextarea_0"])):not(:has([data-testid="tweetButtonInline"])):not(.pos-keep-visible) {
+  display: none !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
+}
+
+html[data-pos-twitter-trends="true"] div[data-testid="sidebarColumn"] section,
+html[data-pos-twitter-trends="true"] div[data-testid="sidebarColumn"] [data-testid="trend"],
+html[data-pos-twitter-trends="true"] div[data-testid="sidebarColumn"] aside[aria-label],
+html[data-pos-twitter-trends="true"] div[data-testid="sidebarColumn"] div[aria-label*="Timeline"] {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+html[data-pos-twitter-trends="true"] a[data-testid="AppTabBar_Explore_Link"],
+html[data-pos-twitter-trends="true"] a[href*="/explore"],
+html[data-pos-twitter-trends="true"] a[href*="/i/grok"],
+html[data-pos-twitter-trends="true"] a[aria-label*="Explorar"],
+html[data-pos-twitter-trends="true"] a[aria-label*="Explore"],
+html[data-pos-twitter-trends="true"] a[aria-label*="Grok"] {
+  display: none !important;
+  pointer-events: none !important;
+}
+
+.pos-cozy-card {
+  margin: 28px auto 20px auto;
+  max-width: 500px;
+  width: 92%;
+  padding: 22px;
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(220, 215, 228, 0.85);
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  box-sizing: border-box;
+  animation: pos-fade-in 0.3s ease-out;
+}
+
+html[style*="background-color: rgb(0, 0, 0)"] .pos-cozy-card,
+html[style*="background-color: rgb(21, 32, 43)"] .pos-cozy-card,
+body[style*="background-color: rgb(0, 0, 0)"] .pos-cozy-card,
+body[style*="background-color: rgb(21, 32, 43)"] .pos-cozy-card {
+  background: rgba(22, 24, 28, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: #e4e2e8;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.45);
+}
+
+.pos-cozy-card .pos-card-img-wrap {
+  width: 100%;
+  max-height: 380px;
+  overflow: hidden;
+  border-radius: 14px;
+  margin-bottom: 16px;
+  background: #f0edf4;
+}
+
+.pos-cozy-card img.pos-card-img {
+  width: 100%;
+  height: 100%;
+  max-height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+.pos-cozy-card .pos-headline {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #2b2532;
+  margin: 0 0 4px 0;
+}
+
+html[style*="background-color: rgb(0, 0, 0)"] .pos-cozy-card .pos-headline,
+html[style*="background-color: rgb(21, 32, 43)"] .pos-cozy-card .pos-headline {
+  color: #f7f5fa;
+}
+
+.pos-cozy-card .pos-korean-text {
+  color: #ff6b9d;
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin: 4px 0 10px 0;
+  letter-spacing: -0.2px;
+}
+
+.pos-cozy-card .pos-quote {
+  font-size: 0.92rem;
+  color: #6a6474;
+  line-height: 1.5;
+  margin: 0;
+}
+
+html[style*="background-color: rgb(0, 0, 0)"] .pos-cozy-card .pos-quote,
+html[style*="background-color: rgb(21, 32, 43)"] .pos-cozy-card .pos-quote {
+  color: #aba4b5;
+}
+
+@keyframes pos-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

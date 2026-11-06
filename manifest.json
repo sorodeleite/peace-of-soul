@@ -1,0 +1,59 @@
+{
+  "manifest_version": 3,
+  "name": "peace of soul",
+  "version": "1.0.0",
+  "description": "detox de redes sociais: sem timeline no twitter/x, sem reels e feed no instagram. foco e paz mental.",
+  "author": "u3unicornios",
+  "icons": {
+    "16": "assets/icons/icon-16.png",
+    "48": "assets/icons/icon-48.png",
+    "128": "assets/icons/icon-128.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "assets/icons/icon-16.png",
+      "48": "assets/icons/icon-48.png",
+      "128": "assets/icons/icon-128.png"
+    },
+    "default_title": "peace of soul"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.twitter.com/*",
+        "*://*.x.com/*"
+      ],
+      "js": ["content/twitter.js"],
+      "css": ["content/twitter.css"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": [
+        "*://*.instagram.com/*"
+      ],
+      "js": ["content/instagram.js"],
+      "css": ["content/instagram.css"],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/photos/*",
+        "assets/icons/*"
+      ],
+      "matches": [
+        "*://*.twitter.com/*",
+        "*://*.x.com/*",
+        "*://*.instagram.com/*"
+      ]
+    }
+  ]
+}

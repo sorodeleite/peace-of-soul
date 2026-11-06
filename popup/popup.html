@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>peace of soul</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo-area">
+        <img src="../assets/icons/icon-48.png" alt="ícone" class="logo-img">
+        <div>
+          <h1 class="title">peace of soul</h1>
+          <p class="subtitle">detox de redes sociais</p>
+        </div>
+      </div>
+      <span class="status-pill" id="status-pill">ativo</span>
+    </header>
+
+    <div class="mini-banner">
+      <img id="popup-preview-img" src="../assets/photos/youre-under-arrest.jpg" alt="vibe" />
+      <p class="banner-quote" id="popup-quote">"o tempo que você não perde vendo vídeos aleatórios é tempo pra você viver de verdade"</p>
+    </div>
+
+    <section class="section">
+      <h2 class="section-title">twitter / x</h2>
+      
+      <label class="toggle-row">
+        <div class="label-text">
+          <span class="label-name">esconder timeline</span>
+          <span class="label-desc">só abre pra tweetar e pronto, sem rolar feed</span>
+        </div>
+        <input type="checkbox" id="hideTwitterTimeline" checked>
+        <span class="slider"></span>
+      </label>
+
+      <label class="toggle-row">
+        <div class="label-text">
+          <span class="label-name">bloquear trends & explorar</span>
+          <span class="label-desc">tira e bloqueia trending topics, grok e busca</span>
+        </div>
+        <input type="checkbox" id="hideTwitterTrends" checked>
+        <span class="slider"></span>
+      </label>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">instagram</h2>
+      
+      <label class="toggle-row">
+        <div class="label-text">
+          <span class="label-name">bloquear reels</span>
+          <span class="label-desc">remove atalhos e bloqueia qualquer link de reels</span>
+        </div>
+        <input type="checkbox" id="hideInstagramReels" checked>
+        <span class="slider"></span>
+      </label>
+
+      <label class="toggle-row">
+        <div class="label-text">
+          <span class="label-name">esconder feed principal</span>
+          <span class="label-desc">bloqueia os posts da timeline e mantém direct livre</span>
+        </div>
+        <input type="checkbox" id="hideInstagramFeed" checked>
+        <span class="slider"></span>
+      </label>
+    </section>
+
+    <section class="section">
+      <h2 class="section-title">lembrete</h2>
+      
+      <label class="toggle-row">
+        <div class="label-text">
+          <span class="label-name">aviso no doomscrolling</span>
+          <span class="label-desc">mostra as fotos youre-under-arrest no lugar do feed</span>
+        </div>
+        <input type="checkbox" id="showCozyCards" checked>
+        <span class="slider"></span>
+      </label>
+    </section>
+
+    <footer class="footer">
+      <p>salva automaticamente</p>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
